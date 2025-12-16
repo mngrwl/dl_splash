@@ -1,16 +1,27 @@
 html, body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 header {
   text-align: center;
+  height: 95%;
+  display: inline-block;
+  width: 100%;
 }
 
 .top_logo * {
-  font-size: 40px;
-  max-height: 50px;
+  font-size: 75px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  max-height: 75px;
   display: inline-block !important;
+}
+
+div.big_logo {
+  display: inline-block;
+  margin: 10% auto 0 auto;
 }
 
 .top_logo img {
@@ -18,8 +29,23 @@ header {
 }
 
 header h4 {
-  margin-top: -10px;
-  font-style: italic;
+  font-family: sans-serif;
+  margin-top: -25px;
+  /* font-style: italic; */
+  font-weight: 500;
+}
+
+#down {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 18% auto 0 auto;
+}
+
+#down img {
+  width: 30px;
+  height: 30px;
+  filter: opacity(20%);
 }
 
 hr {
@@ -41,7 +67,7 @@ hr {
 
 section.nondev {
   padding: 0% 5%;
-  margin: 0 auto;
+  margin: 2% auto 0 auto;
   max-width: 500px;
 }
 
@@ -67,13 +93,49 @@ section.nondev {
     color: #0432ff;
 }
 
-.endorsed {
-    text-align: center !important;
+#endorsements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7%;
+}
+
+div.endorsements {
+  display: flex;
+  flex-direction: row;
+  max-width: 650px;
+  margin: 1.5em auto;
+}
+
+#endorsements h3 {
+  margin: 30px auto;
+  font-size: 22px;
+}
+
+div.endorsed {
+  text-align: center !important;
+  width: 100%;
+  max-width: 550px;
+  display: flex;
+  flex-direction: column;
 }
 
 .endorsed img {
     max-height: 120px;
-    margin: auto;
+    margin: 0 auto;
+}
+
+.endorsed h4 {
+  
+}
+
+.endorsed h5 {
+  margin: 10px auto auto auto;
+}
+
+.endorsed p {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .about-signature {
