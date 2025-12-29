@@ -1,16 +1,27 @@
 html, body {
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
 }
 
 header {
   text-align: center;
+  height: 95%;
+  display: inline-block;
+  width: 100%;
 }
 
 .top_logo * {
-  font-size: 40px;
-  max-height: 50px;
+  font-size: 75px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  max-height: 75px;
   display: inline-block !important;
+}
+
+div.big_logo {
+  display: inline-block;
+  margin: 10% auto 0 auto;
 }
 
 .top_logo img {
@@ -18,20 +29,186 @@ header {
 }
 
 header h4 {
-  margin-top: -10px;
-  font-style: italic;
+  font-family: sans-serif;
+  margin-top: -25px;
+  /* font-style: italic; */
+  font-weight: 500;
+}
+
+#down {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 18% auto 0 auto;
+}
+
+#down img {
+  width: 30px;
+  height: 30px;
+  filter: opacity(20%);
 }
 
 hr {
-  color: blue;
+    background-color: #ecebf4;
+}
+
+.center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.center hr {
+    width: 100px;
+    background-color: #ecebf4;
+    border: none;
+    margin: 0 auto;
+    height: 4px;
 }
 
 section.nondev {
   padding: 0% 5%;
-  margin: 0 auto;
+  margin: 2% auto 0 auto;
   max-width: 500px;
+}
+
+.roald h3 {
+    text-align: center;
+}
+
+.roald h4 {
+    text-align: center;
+    font-weight: 500 !important;
+}
+
+.roald img {
+    max-width: 100%;
+    margin: 0 auto;
 }
 
 .text-url {
   text-decoration: none;
 }
+
+.red-text {
+    color: #0432ff;
+}
+#endorsements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 7%;
+}
+
+div.endorsements {
+  display: flex;
+  flex-direction: row;
+  max-width: 570px;
+  margin: 1.5em auto;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 40px;
+}
+
+#endorsements h3 {
+  margin: 30px auto;
+  font-size: 22px;
+}
+
+div.endorsed {
+  text-align: center !important;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(50% - 5px);
+}
+
+.endorsed img {
+  max-height: 120px;
+  margin: 0 auto;
+}
+
+.endorsed h4 {
+  margin: 13px auto;
+}
+
+.endorsed h5 {
+  margin: 10px auto auto auto;
+}
+
+.endorsed p {
+  max-width: 250px;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 0.9em;
+}
+
+.about-signature {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#login_link {
+  text-align: center;
+  margin-top: 2%;
+}
+
+#login_link a {
+  text-decoration: none;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+#login_link a:hover {
+  color: rgba(40, 125, 255, 0.85);
+  font-weight: bold;
+}
+
+.note {
+    font-family: monospace;
+    font-size: 13px;
+    color: gray;
+    margin: 50px auto 20px;
+    text-align: center;
+}
+
+@media screen and (max-width: 450px) {
+  div.big_logo {
+    display: inline-block;
+    margin: 40% auto 0 auto;
+  }
+
+  .top_logo * {
+    font-size: 40px;
+    font-weight: 600;
+    letter-spacing: -0.03em;
+    max-height: 45px;
+    display: inline-block !important;
+  }
+
+  header h4 {
+    font-family: sans-serif;
+    margin-top: -10px;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+
+  #down {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    margin: 38% auto 0 auto;
+  }
+
+  div.endorsements {
+    max-width: 100%;
+  }
+
+  .note {
+      font-family: monospace;
+      font-size: 13px;
+      color: gray;
+      margin: 50px auto 20px;
+      text-align: center;
+  }
+}
+
